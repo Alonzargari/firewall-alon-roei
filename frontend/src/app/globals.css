@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+.home-icon,.settings-icon {
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.home-icon:hover,.settings-icon:hover {
+  transform: scale(1.1);
+}
+
+.tabsbar {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #ecf0f1;  /* צבע רקע בהיר */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tabsbar a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #2c3e50; /* צבע טקסט כהה */
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.tabsbar a:hover {
+  background-color: #dfe6e9; /* שינוי רקע קל ב-hover */
+  transform: translateY(-2px); /* תנועה קטנה בעת hover */
+}
+
+.tabsbar a.active {
+  border-bottom: 3px solid #2c3e50; /* קו תחתון לטאב פעיל */
+  font-weight: 600;
+  color: #2c3e50;
+}
