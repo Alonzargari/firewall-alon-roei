@@ -4,8 +4,8 @@ WORKDIR /backend
 COPY . .
 
 RUN npm install
-RUN npm run build
+
 
 EXPOSE 5000
 
-CMD sh -c "npx drizzle-kit generate && npx drizzle-kit migrate && npm run dev"
+CMD sh -c "npx drizzle-kit generate && npx drizzle-kit migrate && npm run build && npm run dev"
